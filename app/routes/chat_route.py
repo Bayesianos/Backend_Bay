@@ -6,7 +6,6 @@ from app.models.user_model import User_Receive, User_Send
 calculate = Algorithm()
 router = APIRouter()
 
-
 responses = {
   200: {
     "description": "Dados recebidos com sucesso.",

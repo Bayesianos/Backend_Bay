@@ -1,9 +1,6 @@
-# import uuid
-
 from pydantic import BaseModel
-from .enum_user import Enum_PNO
 
-class User_Receive(BaseModel):#não precisa de construtor, pq o BaseModel já tem um proprio construtor
+class User_Receive(BaseModel):
   age: int 
   sex: int 
   job: int 

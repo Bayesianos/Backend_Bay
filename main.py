@@ -1,12 +1,10 @@
-from fastapi.responses import RedirectResponse
-from contextlib import asynccontextmanager
 from fastapi import FastAPI
+from fastapi.responses import RedirectResponse
 from fastapi.middleware.cors import CORSMiddleware
+from contextlib import asynccontextmanager
 import logging
-# from fastapi.middleware.cors import CORSMiddleware
 
 from app.routes.chat_route import router as chat_router
-from app.services.bayesian_algorithm import Algorithm
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger('    ')

@@ -33,4 +33,3 @@ vacation/others = 7
 Risk
 good = 1
 bad = 0
-
