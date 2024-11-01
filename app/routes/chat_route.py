@@ -19,12 +19,11 @@ responses = {
 
 @router.post('/api/receive-data', name='receber dados do usuário', responses=responses)
 async def receiveData(data: User_Receive): # não é parametro de url 
-  data_dict = data.model_dump()
+  data_dict = data.model_dump() # converte o dado em um dicionario contendo chave e valor
   
   for key, value in data_dict.items():
-    if value is None or (isinstance(value, str) and not value.strip()):
+    if (value is None or value == ' '):
       raise HTTPException(status_code=400, detail=f"{key.capitalize()} é obrigatório e não pode ser vazio.")
-
   
   resultado_emprestimo = calculate.Calculate(data_dict) # retornar se o emprestimo é valido ou não 
   

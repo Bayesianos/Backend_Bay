@@ -1,0 +1,36 @@
+SEX
+male = 1
+female = 0
+
+Housing
+own = 1
+free = 0
+rent = 2
+
+Saving accounts
+NA = 4
+little = 0
+quite rich = 2
+moderate = 1
+rich = 3
+
+Checking account
+NA = 3
+little = 0
+moderate = 1
+rich = 2
+
+Purpose
+radio/TV = 5
+education = 3
+furniture/equipment = 4
+car = 1
+business = 0
+domestic appliances = 2
+repairs = 6
+vacation/others = 7
+
+Risk
+good = 1
+bad = 0
+
