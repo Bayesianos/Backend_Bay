@@ -39,7 +39,11 @@ app = FastAPI(
 
 app.include_router(chat_router)
 
-@app.get("/", include_in_schema=False)
+@app.get('/', include_in_schema=False)
 async def docs():
   logger.info('redirencionando para o swagger')
   return RedirectResponse(url="/docs")
+
+@app.get('/home', include_in_schema=False)
+async def home():
+  return {'pagina home': 'hello world'}
