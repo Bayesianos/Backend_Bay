@@ -23,19 +23,19 @@ app = FastAPI(
   lifespan=inicio
 )
 
-origins = [
-   #alterar para a url do site depois
-  "http://localhost",
-  "http://localhost:8080",
-]
+# origins = [
+#    #alterar para a url do site depois
+#   "http://localhost",
+#   "http://localhost:8080",
+# ]
 
-app.add_middleware(
-  CORSMiddleware,
-  allow_origins=origins,
-  allow_credentials=True,
-  allow_methods=["*"],
-  allow_headers=["*"],
-)
+# app.add_middleware(
+#   CORSMiddleware,
+#   allow_origins=origins,
+#   allow_credentials=True,
+#   allow_methods=["*"],
+#   allow_headers=["*"],
+# )
 
 app.include_router(chat_router)
 
