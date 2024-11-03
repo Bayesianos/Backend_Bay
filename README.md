@@ -76,6 +76,7 @@ Exemplo de payload de envio:
   "duration": 30,
   "purpose": 4
 }
+```
 
 Exemplo de payload de recebimento:
 ```json
