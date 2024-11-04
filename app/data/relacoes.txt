@@ -30,6 +30,20 @@ domestic appliances = 2
 repairs = 6
 vacation/others = 7
 
+Age
+0-17 = 0
+18-29 = 1 
+30-39 = 2 
+40-49 = 3 
+50-59 = 4 
+60+ = 5
+
+Credit_amount
+0-999 = 0
+1000-4999 = 1
+5000-9999 = 2
+10000-15000 = 3
+
 Risk
 good = 1
 bad = 0 

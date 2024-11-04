@@ -24,6 +24,6 @@ async def receiveData(data: User_Receive): # não é parametro de url
     if (value is None or value == ' '):
       raise HTTPException(status_code=400, detail=f"{key.capitalize()} é obrigatório e não pode ser vazio.")
   
-  resultado_emprestimo = calculate.Calculate(data_dict) # retornar se o emprestimo é valido ou não 
+  resultado_emprestimo = calculate.Calculate(data_dict) 
   
   return User_Send(emprestimo_valido=resultado_emprestimo)
