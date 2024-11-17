@@ -1,4 +1,4 @@
-# Análise de Elegibilidade para Empréstimo Bancário com Redes Bayesianas
+# Backend_Bay - Aplicação de Análise de Crédito
 
 Este projeto foi desenvolvido como parte da disciplina de **Inteligência Artificial** no Instituto Federal de Santa Catarina (IFSC). O sistema utiliza **Redes Bayesianas** para analisar dados dos usuários e determinar a elegibilidade para a concessão de empréstimos bancários.
 
