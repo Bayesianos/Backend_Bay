@@ -28,7 +28,6 @@ O objetivo deste sistema é analisar automaticamente os dados do usuário e prev
 ### Pré-requisitos
 - Python 3.11 ou superior
 - FastAPI
-- Uvicorn
 
 ### Passos para Instalação
 
@@ -52,7 +51,7 @@ O objetivo deste sistema é analisar automaticamente os dados do usuário e prev
 
 4. Execute o servidor FastAPI com Uvicorn:
     ```bash
-    uvicorn app.main:app --reload
+    uvicorn main:app --reload
     ```
 
 5. Acesse a documentação da API:
