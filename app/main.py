@@ -25,7 +25,7 @@ app = FastAPI(
 
 origins = [
   "http://localhost:3000",
-  "https://frontend-bay.onrender.com"
+  "https://frontend-bay-uytb.onrender.com"
 ]
 
 app.add_middleware(
