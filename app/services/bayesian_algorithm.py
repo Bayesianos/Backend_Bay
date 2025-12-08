@@ -15,9 +15,9 @@ class Algorithm:
                                ('Risk', 'Job'),
                                ('Risk', 'Housing'),
                                ('Risk', 'Saving_accounts'),
-                               ('Risk', 'Checking_account'),
-                               ('Risk', 'Credit_amount'),
-                               ('Risk', 'Duration'),
+                              #  ('Risk', 'Checking_account'),
+                              #  ('Risk', 'Credit_amount'),
+                              #  ('Risk', 'Duration'),
                                ('Risk', 'Purpose')]) 
     modelo.fit(dados) 
 
@@ -28,9 +28,9 @@ class Algorithm:
                                                        'Job': dado['job'], 
                                                        'Housing': dado['housing'], 
                                                        'Saving_accounts': dado['saving_accounts'], 
-                                                       'Checking_account': dado['checking_account'], 
-                                                       'Credit_amount': dado['credit_amount'],
-                                                       'Duration': dado['duration'],
+                                                      #  'Checking_account': dado['checking_account'], 
+                                                      #  'Credit_amount': dado['credit_amount'],
+                                                      #  'Duration': dado['duration'],
                                                        'Purpose': dado['purpose']})
     
     array = result_dist.values
